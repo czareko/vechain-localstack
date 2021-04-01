@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  thor-node:
+    image: vechain/thor
+    volumes:
+      - /data/vechain/.org.vechain.thor:/root/.org.vechain.thor
+    command: --network test --api-addr 0.0.0.0:8669
+    ports:
+      - target: 8669
+        published: 8669
+        mode: host
+      - target: 11235
+        published: 11235
+        protocol: udp
+        mode: host
+      - target: 11235
+        published: 11235
+        protocol: tcp
+        mode: host
+  web3-gear:
+    image: vechain/web3-gear
+    environment:
+      THOR_IP: thor-node
+      THOR_PORT: 8669
+    ports:
+      - target: 8545
+        published: 8545
+        mode: host
+    depends_on:
+      - thor-node
