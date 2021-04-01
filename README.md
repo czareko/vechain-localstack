@@ -1,10 +1,11 @@
 # VeChain Local Development Stack
 
-__Adresses:__
+__Addresses:__
 
-VeChain node swagger: http://localhost:8669/
-
-VeChain web3-gear: http://localhost:8545/
+<table>
+<tr><td>VeChain Node Swagger:</td><td><a href="http://localhost:8669">http://localhost:8669</a></td></tr>
+<tr><td>Web3-Gear:</td><td><a href="http://localhost:8545">http://localhost:8545</a></td></tr>
+</table>
 
 ## DockerCompose
 
