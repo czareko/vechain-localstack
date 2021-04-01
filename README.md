@@ -1,6 +1,6 @@
 # VeChain Local Development Stack
 
-##DockerCompose
+## DockerCompose
 
 
 Simple run in docker-compose mode.
