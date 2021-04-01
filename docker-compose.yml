@@ -18,6 +18,10 @@ services:
         published: 11235
         protocol: tcp
         mode: host
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
   web3-gear:
     image: vechain/web3-gear
     environment:
@@ -29,3 +33,7 @@ services:
         mode: host
     depends_on:
       - thor-node
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
