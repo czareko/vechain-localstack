@@ -58,6 +58,7 @@ List running services
 docker service ls
 ```
 
+Detailed status
 
 ```
 docker stack ps <GROUP_NAME>

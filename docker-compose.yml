@@ -19,7 +19,7 @@ services:
         protocol: tcp
         mode: host
     deploy:
-      replicas: 2
+      replicas: 1
       restart_policy:
         condition: on-failure
   web3-gear:
@@ -34,6 +34,6 @@ services:
     depends_on:
       - thor-node
     deploy:
-      replicas: 2
+      replicas: 1
       restart_policy:
         condition: on-failure
