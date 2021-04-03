@@ -5,7 +5,7 @@ services:
     image: vechain/thor
     volumes:
       - /data/vechain/.org.vechain.thor:/root/.org.vechain.thor
-    command: --network test --api-addr 0.0.0.0:8669
+    command: --network test --api-addr 0.0.0.0:8669 --api-cors *
     ports:
       - target: 8669
         published: 8669

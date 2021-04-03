@@ -1,5 +1,7 @@
 # VeChain Local Development Stack
 
+This configuration is completely for local use. If you want to use it anywhere else, please think about security.
+
 __Addresses:__
 
 <table>
